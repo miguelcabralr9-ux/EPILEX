@@ -1,0 +1,128 @@
+.centro {
+display: flex;
+flex-direction:column;
+justify-content:center;
+align-items: center;
+}
+
+/*overlays*/
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    
+    position: fixed;
+    top: 0%;
+    left: 43.5%;
+
+    width: fit-content;
+    height: fit-content;
+    padding: 40px;
+
+    background-color: rgb(219, 219, 219);
+
+    transform: translateY(-100%);
+    transition: 0.5s;
+}
+
+.overlay.entrar {
+    transform: translateY(30%);
+    opacity: 1;
+}
+
+.overlay.sair{
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.fundo {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+
+    transition: 0.5s;
+}
+
+.fundo.entrar {
+background-color: rgba(0, 0, 0, 0.30);
+pointer-events: auto;
+}
+
+.fundo.sair {
+background-color: rgba(0, 0, 0, 0);
+pointer-events: none;
+}
+/*Botões*/
+.botao{
+border-radius: 15px;
+border: none;
+
+width: 100px;
+height: 40px;
+
+font-size: 20px;
+font-weight: bold;
+
+transition: 0.2s;
+}
+
+.botao.cinza:hover {
+    cursor: pointer;
+   background-color: #cecece;
+}
+
+.botao.cinza:active {
+background-color: #acacac;
+}
+
+.botao.cinza {
+    background-color:#e0e0e0;
+    color: #ff4322;
+}
+
+.caixatexto {
+width: 200px;
+height: 30px;
+
+background-color: #d9d9d9;
+border: none;
+outline: none;
+
+font-family: "inter", sans-serif;
+font-size:medium;
+
+padding-left: 8px;
+}
+.caixatexto:hover {
+    background-color: #cecece;
+}
+
+/*Tags*/
+p {
+    margin-bottom: 3px;
+    color:#ff4322 ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 500;
+}
+
+a {
+color:#5384ff;
+font-family: "inter", sans-serif;
+font-size: small;
+}
+a:hover {
+    color: #3d6ce4;
+}
+
+h1 {
+color:#ff4322;
+border: #ff4d01;
+border-radius:1px;
+}
