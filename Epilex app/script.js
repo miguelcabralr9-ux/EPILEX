@@ -5,8 +5,9 @@ const fundo = document.querySelector(".fundo")
 const data = document.querySelector("#data");
 
 //Faz com que a data máxima seja a atual
-data.max = new Date().toISOString().split("T")[0];
-
+if(data) {
+data.max = new Date().toISOString().split("T")[0]; 
+};
 //abre overlay de cadastro
 cadastro.addEventListener("click", function() {
     //overlay
