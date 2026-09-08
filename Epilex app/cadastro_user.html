@@ -19,16 +19,16 @@
         <div class ="caixa">
             <div>
                 <p>Nome:</p>
-                <input type="text" class="caixatexto maior">
+                <input type="text" class="caixatexto maior" id="user_name">
                 <br>
                 <p>E-mail:</p>
-                <input type="email" class="caixatexto maior">
+                <input type="email" class="caixatexto maior" id="user_email">
                 <br>
                 <p>Senha:</p>
-                <input type="password" class="caixatexto maior">
+                <input type="password" class="caixatexto maior" id="user_password">
                 <br>
                 <p>Confirme sua senha:</p>
-                <input type="password" class="caixatexto maior">
+                <input type="password" class="caixatexto maior" id="user_confirm_password">
                 <br>
                 <br>
             </div>
@@ -38,12 +38,12 @@
         <div class="caixa"> 
             <div>
                 <p>Idade:</p>
-                <input type="number" class="caixatexto maior">
+                <input type="number" class="caixatexto maior" id="user_age">
                 <br>
                 <p>Data de nascimento:</p>
-                <input type="date" class="caixatexto maior" min="1900-01-01" id="data">
-                <p>Sexo:</p>
-                <select class="caixatexto maior">
+                <input type="date" class="caixatexto maior" min="1900-01-01" id="user_date">
+                <p>Gênero:</p>
+                <select class="caixatexto maior" id="user_gender">
                     <option value="masculino">Masculino</option>
                     <option value="feminino">Feminino</option>
                     <option value="outro">Outro</option>
@@ -57,10 +57,10 @@
         <div class="caixa">
             <div>
                 <p>Telefone:</p>
-                <input type="tel" class="caixatexto maior">
+                <input type="tel" class="caixatexto maior" id="user_number">
                 <br>
                 <p>CEP:</p>
-                <input type="text" class="caixatexto maior">
+                <input type="text" class="caixatexto maior" id="user_cep">
                 <br>
                 <br>
             </div>
@@ -70,13 +70,13 @@
         <div class="caixa">
             <div>
                 <p>Altura:</p>
-                <input type="number" class="caixatexto maior">
+                <input type="number" class="caixatexto maior" id="user_height">
                 <br>
                 <p>Peso:</p>
-                <input type="number" class="caixatexto maior">
+                <input type="number" class="caixatexto maior" id="user_weight">
                 <br>
                 <p>Tipo sanguíneo:</p>
-                <select class="caixatexto maior">
+                <select class="caixatexto maior" id="user_blood">
                     <option value="A+">A+</option>
                     <option value="A-">A-</option>
                     <option value="B+">B+</option>
@@ -95,17 +95,22 @@
         <div class="caixa">
             <div>
                 <p>Possui alguma doença?<br> se sim, qual:</p>
-                <input type="text" class="caixatexto maior">
+                <input type="text" class="caixatexto maior" id="user_disease">
                 <br>
                 <p>Transtorno ou deficiência?<br> se sim, qual?</p>
-                <input type="text" class="caixatexto maior">
+                <input type="text" class="caixatexto maior" id="user_deficiency">
                 <br>
                 <p>Toma algum medicamento controlado?<br> se sim, qual?</p>
-                <input type="text" class="caixatexto maior">
+                <input type="text" class="caixatexto maior" id="user_medication">
                 <br>
                 <br>
             </div>
         </div>
+        <br>
+        <br>
+        <button class="botao cinza">Confirmar</button>
+        <br>
+        <br>
     </div>
 <script src="script.js"></script>
 
